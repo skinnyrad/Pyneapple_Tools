@@ -16,6 +16,7 @@ The intention is that these scripts be used in tandem. First, gather all of the 
 
         opkg update
         opkg install git
+        opkg install git-http
         git clone https://github.com/skinnyrad/Pyneapple_Tools
         cd Pyneapple_Tools
 
