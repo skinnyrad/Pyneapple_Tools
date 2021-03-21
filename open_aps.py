@@ -7,6 +7,10 @@ file = open('/pineapple/Pyneapple_Tools/aps.dump','w')
 
 #create connection to database
 con = sqlite3.connect('/tmp/recon.db')
+
+#handles error when people use emoji for APs
+con.text_factory = lambda b: b.decode(errors = 'ignore')
+
 cursor = con.cursor()
 
 #select all APs with no encryption
@@ -19,3 +23,6 @@ file.close()
 
 #format the dump file to only contain a list
 os.system("""cat /pineapple/Pyneapple_Tools/aps.dump | cut -d "," -f 2 | sort | uniq > /pineapple/Pyneapple_Tools/open_aps.txt""")
+
+#display output to screen
+os.system("cat /pineapple/Pyneapple_Tools/open_aps.txt")
