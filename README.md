@@ -17,9 +17,6 @@ The intention is that these scripts be used in tandem. First, gather all of the 
         opkg update
         opkg install git
         opkg install git-http
+        opkg install python3-pip
         git clone https://github.com/skinnyrad/Pyneapple_Tools
         cd Pyneapple_Tools
-
-5. Run the setup script with the following command.
-
-        ./setup.sh
