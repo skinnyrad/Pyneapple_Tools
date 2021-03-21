@@ -20,3 +20,15 @@ The intention is that these scripts be used in tandem. First, gather all of the 
         opkg install python3-pip
         git clone https://github.com/skinnyrad/Pyneapple_Tools
         cd Pyneapple_Tools
+
+## Execution
+To run open_aps.py use python3 while in the Pyneapple_Tools directory.
+
+        python3 open_aps.py
+        
+The output will be placed in open_aps.txt in the same directory.
+Likewise, run top_ssids.py in the same manner.
+
+        python3 top_ssids.py
+        
+The output will be placed in top_ssids.txt.
