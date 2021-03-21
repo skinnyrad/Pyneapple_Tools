@@ -14,6 +14,8 @@ The intention is that these scripts be used in tandem. First, gather all of the 
 3. Click the terminal windows icon in the upper right corner of the Pineapple GUI.
 4. At the terminal type:
 
+        opkg update
+        opkg install git
         git https://github.com/skinnyrad/Pyneapple_Tools
         cd Pyneapple_Tools
 
