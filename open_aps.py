@@ -2,15 +2,20 @@
 import sqlite3
 import os
 
+#create file to dump database contents
 file = open('/pineapple/Pyneapple_Tools/aps.dump','w')
 
+#create connection to database
 con = sqlite3.connect('/tmp/recon.db')
 cursor = con.cursor()
-cursor.execute("SELECT * FROM aps")
-#cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+
+#select all APs with no encryption
+cursor.execute("SELECT * FROM aps WHERE encryption=0")
+
+#fetch the selected entries and throw them in the dump file
 for row in cursor.fetchall():
-#    print(row)
     file.write(','.join(str(s) for s in row) + '\n')
 file.close()
 
-os.system("""cat /pineapple/Pyneapple_Tools/aps.dump | cut -c2- | sort | cut -d "," -f 1,2,4 | sort | uniq | grep ",0" | cut -d "," -f 2 > /pineapple/Pyneapple_Tools/open_aps.txt""")
+#format the dump file to only contain a list
+os.system("""cat /pineapple/Pyneapple_Tools/aps.dump | cut -d "," -f 2 | sort | uniq > /pineapple/Pyneapple_Tools/open_aps.txt""")
