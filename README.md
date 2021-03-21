@@ -16,7 +16,7 @@ The intention is that these scripts be used in tandem. First, gather all of the 
 
         opkg update
         opkg install git
-        git https://github.com/skinnyrad/Pyneapple_Tools
+        git clone https://github.com/skinnyrad/Pyneapple_Tools
         cd Pyneapple_Tools
 
 5. Run the setup script with the following command.
