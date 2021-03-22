@@ -6,7 +6,7 @@ The first, open_aps.py, is to be used after recon is run at least once. This scr
 
 The second, top_ssids.py, can be run after logging PineAP activity. This script pulls the entries out of the activity log from log.db. It will create a list that ranks the most probed for SSIDs. If a single MAC address probes for an SSID 50 times, that will only be counted as 1 probe request. The intent is to use this script is to find out how many unique MAC addresses probe for a particular SSID. The output of the script is put into top_ssids.txt. The contents of the file lists the number of unique probe requests followed by the SSID.
 
-The intention is that these scripts be used in tandem. First, gather all of the open SSIDs in a particular geographic region (using open_aps.py) and load those into the SSID pool of the Pineapple. Next, broadcast out those SSIDs and see which ones in the list illicit the greatest response from client devices (using top_ssids.py). Finally, elimate unproductive SSIDs from your pool list.
+The intention is that these scripts be used in tandem. First, gather all of the open SSIDs in a particular geographic region (using open_aps.py) and load those into the SSID pool of the Pineapple. Next, broadcast out those SSIDs and see which ones in the list elicit the greatest response from client devices (using top_ssids.py). Finally, elimate unproductive SSIDs from your pool list.
 
 ## Install
 1. Acquire a [WiFi Pineapple Mark VII](https://shop.hak5.org/products/wifi-pineapple) from Hak5.
