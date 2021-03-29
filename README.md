@@ -30,9 +30,11 @@ Like open_aps.py this script retrieves the results of recon activity and pulls o
 
 ***Unlike the other tools, this script can be run in both Windows and Linux.
 
-Execution is as follows:
+Execution on the Pineapple is as follows:
 
         python3 open_aps_json.py <filename_of_json_file.json> <output_filename>
+
+For Windows you probably will start the command with just "python" instead of "python3".
 
 ## top_ssids.py
 Can be run after logging PineAP activity. This script pulls the entries out of the PineAP Activity Log from log.db. It will create a list that ranks the most probed for SSIDs. If a single MAC address probes for an SSID 50 times, that will only be counted as 1 probe request. The intent is to use this script is to find out how many unique MAC addresses probe for a particular SSID. The output of the script is put into top_ssids.txt. The contents of the file lists the number of unique probe requests followed by the SSID.
