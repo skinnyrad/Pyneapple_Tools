@@ -28,7 +28,7 @@ The output will be placed in open_aps.txt in the same directory.
 ## open_aps_json.py
 Like open_aps.py this script retrieves the results of recon activity and pulls out all open access point SSIDs. However this script is intended to be run on the json files produced by the reporting functions on the WiFi Pineapple. You can retrieve these json files by either downloading your results of a recon scan from the Recon GUI of the Pineapple or by running report_tool from the console interface.
 
-***Unlike the other tools, this script can be run in both Windows and Linux.
+***Unlike the other tools, this script can be run in both Windows and Linux.***
 
 Execution on the Pineapple is as follows:
 
