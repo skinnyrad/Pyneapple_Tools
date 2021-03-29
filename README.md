@@ -49,6 +49,6 @@ The output will be placed in top_ssids.txt.
 
 ## pull_reports.py
 
-The script pulls the latest recon scan data and the current Pineap Activity Log and stores this data in a json file in the Pyneapple_Tools folder. The file is store in the form of date_time_report.json. 
+The script pulls the latest recon scan data and the current Pineap Activity Log and stores this data in a json file in the Pyneapple_Tools folder. The file is stored in the form of date_time_report.json. 
 
         python3 pull_reports.py
