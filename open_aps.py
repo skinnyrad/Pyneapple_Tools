@@ -6,7 +6,7 @@ import os
 file = open('/pineapple/Pyneapple_Tools/aps.dump','w')
 
 #create connection to database
-con = sqlite3.connect('/tmp/recon.db')
+con = sqlite3.connect('/root/recon.db')
 
 #handles error when people use emoji for APs
 con.text_factory = lambda b: b.decode(errors = 'ignore')
