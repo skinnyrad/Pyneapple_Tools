@@ -4,7 +4,7 @@ import os
 
 file = open('/pineapple/Pyneapple_Tools/Activity_Log.dump','w')
 
-con = sqlite3.connect('/tmp/log.db')
+con = sqlite3.connect('/root/log.db')
 
 #handles errors when someone has used emoji for their SSID
 con.text_factory = lambda b: b.decode(errors = 'ignore')
