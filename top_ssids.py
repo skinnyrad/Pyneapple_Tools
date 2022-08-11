@@ -2,7 +2,7 @@
 import sqlite3
 import os
 
-file = open('/pineapple/Pyneapple_Tools/Activity_Log.dump','w')
+file = open('/root/Pyneapple_Tools/Activity_Log.dump','w')
 
 con = sqlite3.connect('/root/log.db')
 
@@ -18,7 +18,7 @@ for row in cursor.fetchall():
 file.close()
 
 #formats top_ssids.txt file
-os.system('cat /pineapple/Pyneapple_Tools/Activity_Log.dump | cut -c3- | sort | cut -d "," -f 1,2| uniq -c | cut -d "," -f 2 | sort | uniq -c | sort -r > /pineapple/Pyneapple_Tools/top_ssids.txt')
+os.system('cat /root/Pyneapple_Tools/Activity_Log.dump | cut -c3- | sort | cut -d "," -f 1,2| uniq -c | cut -d "," -f 2 | sort | uniq -c | sort -r > /root/Pyneapple_Tools/top_ssids.txt')
 
 #outputs formatted file to screen after running
-os.system('cat /pineapple/Pyneapple_Tools/top_ssids.txt')
+os.system('cat /root/Pyneapple_Tools/top_ssids.txt')
