@@ -3,7 +3,7 @@ import sqlite3
 import os
 
 #create file to dump database contents
-file = open('/pineapple/Pyneapple_Tools/aps.dump','w')
+file = open('/root/Pyneapple_Tools/aps.dump','w')
 
 #create connection to database
 con = sqlite3.connect('/root/recon.db')
@@ -22,7 +22,7 @@ for row in cursor.fetchall():
 file.close()
 
 #format the dump file to only contain a list
-os.system("""cat /pineapple/Pyneapple_Tools/aps.dump | cut -d "," -f 2 | sort | uniq > /pineapple/Pyneapple_Tools/open_aps.txt""")
+os.system("""cat /root/Pyneapple_Tools/aps.dump | cut -d "," -f 2 | sort | uniq > /root/Pyneapple_Tools/open_aps.txt""")
 
 #display output to screen
-os.system("cat /pineapple/Pyneapple_Tools/open_aps.txt")
+os.system("cat /root/Pyneapple_Tools/open_aps.txt")
