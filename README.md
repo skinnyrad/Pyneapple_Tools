@@ -8,7 +8,6 @@ Pyneapple_Tools currently consists of three python scripts for the Wifi Pineappl
 3. Click the terminal windows icon in the upper right corner of the Pineapple GUI.
 4. At the terminal type:
 
-        cd /pineapple
         opkg update
         opkg install git
         opkg install git-http
