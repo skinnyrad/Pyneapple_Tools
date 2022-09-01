@@ -5,8 +5,9 @@ Pyneapple_Tools currently consists of three python scripts for the Wifi Pineappl
 ## Install
 1. Acquire a [WiFi Pineapple Mark VII](https://shop.hak5.org/products/wifi-pineapple) from Hak5.
 2. Go through the [setup process](https://docs.hak5.org/hc/en-us/articles/360053348994-1-Firmware-Install).
-3. Click the terminal windows icon in the upper right corner of the Pineapple GUI.
-4. At the terminal type:
+3. Ensure the Pineapple has a connection to the Internet.
+4. Click the terminal windows icon in the upper right corner of the Pineapple GUI.
+5. At the terminal type:
 
         cd ~
         opkg update
